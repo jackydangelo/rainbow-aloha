@@ -28,7 +28,7 @@ export class RainbowAlohaSettingTab extends PluginSettingTab {
 			.setName("Language")
 			.setDesc("Language of the date suggestions that appear after typing @.")
 			.addDropdown((dropdown) => {
-				dropdown.addOption("auto", `Follow Obsidian (${detected})`);
+				dropdown.addOption("auto", `Default (${detected})`);
 				for (const [code, name] of Object.entries(LANGUAGE_NAMES)) {
 					dropdown.addOption(code, name);
 				}
